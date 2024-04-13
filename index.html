@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Group Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="msg-container hide">
+        <p id="msg">winner</p>
+        <button id="rst-btn">close</button>
+    </div>
+<div class="form">
+        <div class="form-group">
+            <label for="gross-annual-income">Gross annual income:</label>
+            <p>Gross annual income is your total salary in a year before any deductions.</p>
+            <input type="number" id="gross-annual-income" name="gross-annual-income" placeholder="Enter gross annual income" required>
+        </div>
+        <div class="form-group ">
+            <label for="extra-income">Extra income:</label>
+            <input type="number" id="extra-income" name="extra-income" placeholder="Enter extra income">
+        </div>
+        <div class="form-group">
+            <label for="age-group">Age group:</label>
+            <select id="age-group" name="age-group">
+                <option value="">Select age group</option>
+                <option value="0-39">0-39</option>
+                <option value="40-60">40-60</option>
+                <option value="60+">60+</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="deductions">Total applicable deductions:</label>
+            <input type="number" id="deductions" name="deductions" placeholder="Enter total applicable deductions">
+        </div>
+        <button id="submit-btn" type="submit">Submit</button>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
